@@ -1,0 +1,28 @@
+{
+  "name": "postcss-line-height",
+  "version": "0.1.0",
+  "description": "PostCSS plugin for converting pixel line heights to unitless line heights",
+  "keywords": [
+    "postcss",
+    "css",
+    "postcss-plugin",
+    "line-height"
+  ],
+  "author": "Tor Morten Jensen <tormorten@anunatak.no>",
+  "license": "MIT",
+  "repository": "tormjens/postcss-line-height",
+  "bugs": {
+    "url": "https://github.com/tormjens/postcss-line-height/issues"
+  },
+  "homepage": "https://github.com/tormjens/postcss-line-height",
+  "dependencies": {
+    "postcss": "^5.0.13"
+  },
+  "devDependencies": {
+    "ava": "^0.9.1",
+    "eslint": "^1.10.3"
+  },
+  "scripts": {
+    "test": "ava && eslint *.js"
+  }
+}
