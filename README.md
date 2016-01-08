@@ -1,27 +1,35 @@
-# PostCSS Responsive Font Line [![Build Status][ci-img]][ci]
+# PostCSS Line Height [![Build Status][ci-img]][ci]
 
-[PostCSS] plugin for responsive font sizes and line heights.
+[PostCSS] plugin for converting px line heights to unitless line heights
 
 [PostCSS]: https://github.com/postcss/postcss
-[ci-img]:  https://travis-ci.org/tormjens/postcss-responsive-font-line.svg
-[ci]:      https://travis-ci.org/tormjens/postcss-responsive-font-line
+[ci-img]:  https://travis-ci.org/tormjens/postcss-line-height.svg
+[ci]:      https://travis-ci.org/tormjens/postcss-line-height
 
 ```css
 .foo {
-    /* Input example */
+    line-height: 24px;
 }
 ```
 
 ```css
 .foo {
-  /* Output example */
+  line-height: 1.5;
 }
 ```
 
 ## Usage
 
 ```js
-postcss([ require('postcss-responsive-font-line') ])
+postcss([ require('postcss-line-height') ])
 ```
 
 See [PostCSS] docs for examples for your environment.
+
+## Options
+
+```js
+{
+    baseFontSize: 16
+}
+```
